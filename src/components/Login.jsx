@@ -5,7 +5,7 @@ import "./Login.css";
 export default function Login() {
   function handleClick() {
     const clientId = "3c46250ca83f4e2f8f41968fb79a0930";
-    const redirectURL = "https://spotifynew-chi.vercel.app/";
+    const redirectURL = "http://localhost:3000/";
     const authUrl = new URL("https://accounts.spotify.com/authorize");
     // const clientSecret = "691486d77afc4844811f56844e3ce49e0";
 
