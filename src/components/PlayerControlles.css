@@ -1,0 +1,74 @@
+
+.PlayerControlles{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  svg {
+    color: #b3b3b3;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: white;
+    }
+  }
+  .state {
+    svg {
+      color: white;
+    }
+  }
+  .previous,
+  .next,
+  .state {
+    font-size: 2rem;
+  }
+}
+
+/* CustomAudioPlayer.css */
+
+.audio-player {
+  background-color: #000; /* Black background */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.play-pause-button {
+  background-color: #000; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.play-pause-button:hover {
+  background-color: #333; /* Darker black on hover */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #444; /* Dark gray background */
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-bar-filled {
+  height: 100%;
+  background-color: #1db954; /* Spotify green or any color you like */
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
